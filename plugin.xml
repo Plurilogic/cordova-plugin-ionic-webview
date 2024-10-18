@@ -56,7 +56,8 @@
 
   <!-- ios -->
   <platform name="ios">
-    <js-module src="src/www/ios/ios-wkwebview-exec.js" name="ios-wkwebview-exec">
+    <!-- La version ios ne fonctionne pas et on a pas besoin du plugin pour ios (Par AC 2024-10-18)--> 
+    <!-- <js-module src="src/www/ios/ios-wkwebview-exec.js" name="ios-wkwebview-exec">
       <clobbers target="cordova.exec"/>
     </js-module>
 
@@ -79,7 +80,7 @@
     <source-file src="src/ios/CDVWKProcessPoolFactory.m"/>
     <header-file src="src/ios/IONAssetHandler.h"/>
     <source-file src="src/ios/IONAssetHandler.m"/>
-    <asset src="src/ios/wk-plugin.js" target="wk-plugin.js"/>
+    <asset src="src/ios/wk-plugin.js" target="wk-plugin.js"/> -->
   </platform>
   <issue>https://github.com/ionic-team/cordova-plugin-ionic-webview/issues</issue>
   <author>Ionic Team</author>
